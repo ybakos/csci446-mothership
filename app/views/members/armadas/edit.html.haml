@@ -1,0 +1,6 @@
+%h2 Editing armada
+= render :partial => "form", :locals => {:armada => @armada}
+%ul
+  %li= link_to 'Show', @armada
+  %li= link_to 'Back', armadas_path
+  %li= link_to 'Destroy', @armada, :confirm => 'Are you sure?', :method => :delete  

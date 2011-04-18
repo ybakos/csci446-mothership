@@ -1,0 +1,17 @@
+/* line 1, sass/application.sass */
+body {
+  text-align: center;
+}
+
+/* line 4, sass/application.sass */
+h1 {
+  border-bottom: 1px black solid;
+  padding-bottom: 5px;
+}
+
+/* line 8, sass/application.sass */
+#wrapper {
+  width: 800px;
+  text-align: left;
+  margin: auto;
+}

@@ -1,0 +1,7 @@
+%tr[armada]
+  %td=h armada.name
+  %td=h armada.creator
+  %td=h armada.cost
+  %td= armada.created_at.to_s(:short)
+  %td
+    = link_to image_tag('icon_small_show.png'), armada

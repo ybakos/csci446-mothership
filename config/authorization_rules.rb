@@ -2,6 +2,7 @@
 authorization do
   role :member do
     has_permission_on :members_members, :to => :read
+    has_permission_on :members_armadas, :to => :manage
   end
   role :administrator do
     includes :member

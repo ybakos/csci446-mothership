@@ -1,0 +1,19 @@
+- content_for :title do
+  Viewing Armada
+
+%h2
+  = "Armada \"#{@armada.to_param}\""
+  .action
+    = link_to 'Back', armadas_path
+
+- content_tag_for :div, @armada do
+  %ul
+    %li
+      %strong Name:
+      =h @armada.name
+    %li
+      %strong Description:
+      =h @armada.description
+    %li
+      %strong Creator:
+      =h @armada.creator_id

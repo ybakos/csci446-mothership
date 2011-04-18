@@ -1,0 +1,15 @@
+%h2= "Armada \"#{@armada.to_param}\""
+- content_tag_for :div, @armada do
+  %ul
+    %li
+      %strong Name:
+      =h @armada.name
+    %li
+      %strong Description:
+      =h @armada.description
+    %li
+      %strong Creator:
+      =h @armada.creator_id
+%ul
+  %li= link_to 'Edit', edit_armada_path(@armada)
+  %li= link_to 'Back', armadas_path

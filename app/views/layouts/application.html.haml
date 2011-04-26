@@ -21,4 +21,9 @@
               %p= msg
         = yield
       #footer
-        %p &copy; 2011 The Students of CSCI446, Spring 2011 at the Colorado School of Mines.
+        %p
+          &copy; 2011 The Students of
+          = link_to 'CSCI446, Spring 2011', 'http://mines.humanoriented.com/classes/2011/spring/csci446/'
+          at the Colorado School of Mines.
+          See the code on
+          == #{link_to 'github', 'https://github.com/ybakos/csci446-mothership'}.

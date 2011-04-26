@@ -7,7 +7,7 @@ This is the "mothership" Rails application for [CSCI446](http://mines.humanorien
 Contributors
 ------------
 
-* Yong Joseph Bakos
+* Yong Joseph Bakos (instructor)
 * name 2
 * etc
 

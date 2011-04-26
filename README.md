@@ -1,4 +1,3 @@
-== Space Armada! (Mothership)
 Space Armada! (Mothership)
 =============
 

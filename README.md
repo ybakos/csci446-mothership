@@ -8,6 +8,7 @@ Contributors
 ------------
 
 * Yong Joseph Bakos (instructor)
+* Joshua Warner
 * name 2
 * etc
 

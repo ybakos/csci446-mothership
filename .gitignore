@@ -20,3 +20,4 @@ Vagrantfile
 *.box
 *.*~
 .rvmrc
+.komodoproject

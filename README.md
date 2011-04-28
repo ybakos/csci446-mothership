@@ -11,7 +11,7 @@ Contributors
 * Joshua Warner
 * Andy Niccolai
 * Amanreet Bajwa
-* name 2
+* Ben Makuh
 * etc
 
 

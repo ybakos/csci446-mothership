@@ -9,6 +9,7 @@ Contributors
 
 * Yong Joseph Bakos (instructor)
 * Joshua Warner
+* Andy Niccolai
 * name 2
 * etc
 

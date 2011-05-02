@@ -12,6 +12,7 @@ Contributors
 * Andy Niccolai
 * Amanreet Bajwa
 * Ben Makuh
+* Zack Tillotson
 * etc
 
 

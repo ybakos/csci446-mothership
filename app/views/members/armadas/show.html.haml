@@ -11,6 +11,9 @@
         = link_to image_tag('icon_small_edit.png'), edit_members_armada_path(@armada)
         = link_to 'edit', edit_members_armada_path(@armada)
       .action
+        = link_to image_tag('icon_small_add.png'), members_armada_components_path(@armada)
+        = link_to 'add components', members_armada_components_path(@armada)
+      .action
         = link_to image_tag('icon_small_delete.png'), members_armada_path(@armada), :method => :delete, :confirm => 'Are you sure?'
         = link_to 'delete', members_armada_path(@armada), :method => :delete, :confirm => 'Are you sure?'
 
@@ -20,13 +23,26 @@
   on
   = @armada.created_at.to_s(:date)
 
-.armada_data
-  %p
-    %strong Name
-    =h @armada.name  
-  %p
-    %strong Description:
-    =h @armada.description
-  %p
-    %strong Cost:
-    =h @armada.cost
+.left
+  .armada_data
+    %p
+      %strong Name
+      =h @armada.name  
+    %p
+      %strong Description:
+      =h @armada.description
+    %p
+      %strong Cost:
+      =h @armada.cost
+
+.right
+  .armada_components
+    %h3 Prepared for Interstellar Flight with...
+    %table
+      - @armada.components.each do |c|
+        %tr
+          %td
+            = image_tag(c.resource.image_path, :width => '100')
+          %td
+            = c.resource.name
+          

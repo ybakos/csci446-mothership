@@ -1,7 +1,7 @@
 class Armada < ActiveRecord::Base
 
   belongs_to :creator, :class_name => "User"
-  has_many :components
+  has_many :components, :dependent => :destroy
 
   def created_by(user)
     creator == user

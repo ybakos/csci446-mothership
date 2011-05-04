@@ -16,4 +16,5 @@
   - if @components.empty?
     %h3 Choose a component type from the menu.
   - else
-    = render :partial => params[:resource_name].downcase, :collection => @components
+    %table.component
+      = render :partial => params[:resource_name].downcase, :collection => @components

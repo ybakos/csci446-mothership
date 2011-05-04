@@ -1,9 +1,10 @@
-#component.shield
-  .thumb= image_tag(shield.photo_file_name)
-  .data
+%tr
+  %td.thumb= image_tag(shield.image_path)
+  %td
     = shield.name
     = "(#{pluralize(shield.price, 'AdmadaBuck')})"
     %br
     = truncate(shield.description, :length => 100)
-  .ui
+  %td
     = link_to image_tag('icon_small_add.png'), members_armada_components_path(@armada, :resource_name => 'Shield', :resource_id => shield.id), :method => :post
+    = link_to 'add to armada', members_armada_components_path(@armada, :resource_name => 'Shield', :resource_id => shield.id), :method => :post

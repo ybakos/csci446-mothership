@@ -1,19 +1,38 @@
 - content_for :title do
-  Viewing Armada
+  = @armada
 
 %h2
-  = "Armada \"#{@armada.to_param}\""
+  = @armada
   .action
-    = link_to 'Back', armadas_path
+    = link_to image_tag('icon_small_larrow.png')
+    = link_to 'back to list', members_armadas_path
 
-- content_tag_for :div, @armada do
-  %ul
-    %li
-      %strong Name:
-      =h @armada.name
-    %li
+%p
+  Created by
+  = @armada.creator
+  on
+  = @armada.created_at.to_s(:date)
+
+.left
+  .armada_data
+    %p
+      %strong Name
+      =h @armada.name  
+    %p
       %strong Description:
       =h @armada.description
-    %li
-      %strong Creator:
-      =h @armada.creator_id
+    %p
+      %strong Cost:
+      =h @armada.cost
+
+.right
+  .armada_components
+    %h3 Prepared for Interstellar Flight with...
+    %table
+      - @armada.components.each do |c|
+        %tr
+          %td
+            = image_tag(c.resource.image_path, :width => '100')
+          %td
+            = c.resource.name
+          

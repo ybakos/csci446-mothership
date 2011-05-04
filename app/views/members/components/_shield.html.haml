@@ -6,4 +6,4 @@
     %br
     = truncate(shield.description, :length => 100)
   .ui
-    = link_to image_tag('icon_small_add.png'), members_armada_component_path(@armada, shield), :method => :post
+    = link_to image_tag('icon_small_add.png'), members_armada_components_path(@armada, :resource_name => 'Shield', :resource_id => shield.id), :method => :post

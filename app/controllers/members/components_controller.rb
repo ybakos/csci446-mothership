@@ -11,15 +11,16 @@ class Members::ComponentsController < Members::MembersController
   end
 
   def create
-    @component = Component.new(params[:component])
+    @component = @armada.components.new(:iid => params[:resource_id], :resource_name => params[:resource_name])
  
     respond_to do |format|
       if @component.save
-        flash[:notice] = 'Component was successfully created.'
-        format.html { redirect_to members_component_path(@component) }
+        flash[:notice] = "Component was successfully added to <a href=\"/members/armadas/#{@armada.id}\">your armada</a>."
+        format.html { redirect_to members_armada_components_path(@armada) }
         format.xml  { render :xml => @component, :status => :created, :location => @component }
       else
-        format.html { render :action => "new" }
+        flash[:error] = 'Could not add component to your armada.'
+        format.html { redirect_to members_components_path}
         format.xml  { render :xml => @component.errors, :status => :unprocessable_entity }
       end
     end

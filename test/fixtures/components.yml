@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  iid: 1
+  iname: MyString
+  icost: 1
+  armada_id: 1
+
+two:
+  iid: 1
+  iname: MyString
+  icost: 1
+  armada_id: 1

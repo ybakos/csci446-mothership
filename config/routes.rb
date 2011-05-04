@@ -18,7 +18,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :members do |members|
     members.resources :users, :only => [:show, :edit, :update]
-    members.resources :armadas
+    members.resources :armadas, :has_many => :components
     members.root :controller => 'members', :action => 'index'
   end
 

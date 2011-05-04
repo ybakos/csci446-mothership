@@ -9,13 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110417232256) do
+ActiveRecord::Schema.define(:version => 20110504131614) do
 
   create_table "armadas", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "cost"
     t.integer  "creator_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "components", :force => true do |t|
+    t.integer  "iid"
+    t.string   "resource_name"
+    t.integer  "count"
+    t.integer  "armada_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,6 +4,7 @@
   %td=h armada.cost
   %td= armada.created_at.to_s(:short_datetime)
   %td
+    = link_to image_tag('icon_small_add.png'), members_armada_components_path(armada), :title => 'Add components'
     = link_to image_tag('icon_small_show.png'), members_armada_path(armada)
     = link_to image_tag('icon_small_edit.png'), edit_members_armada_path(armada)
     = link_to image_tag('icon_small_delete.png'), members_armada_path(armada), :confirm => 'Are you sure?', :method => :delete

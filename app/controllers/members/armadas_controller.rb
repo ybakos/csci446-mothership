@@ -6,6 +6,7 @@ class Members::ArmadasController < Members::MembersController
 
   def create
     @armada = Armada.new(params[:armada])
+    @armada.creator = current_user
     respond_to do |format|
       if @armada.save
         flash[:notice] = 'Armada was successfully created.'

@@ -1,6 +1,16 @@
-%h2 Editing armada
+- content_for :title do
+  Editing
+  = @armada
+
+
+%h2
+  Editing "#{@armada}"
+  .action
+    = link_to image_tag('icon_small_larrow.png')
+    = link_to 'back to list', members_armadas_path
+  .action
+    = link_to image_tag('icon_small_delete.png'), members_armada_path(@armada), :method => :delete, :confirm => 'Are you sure?'
+    = link_to 'delete', members_armada_path(@armada), :method => :delete, :confirm => 'Are you sure?'
+
+
 = render :partial => "form", :locals => {:armada => @armada}
-%ul
-  %li= link_to 'Show', @armada
-  %li= link_to 'Back', armadas_path
-  %li= link_to 'Destroy', @armada, :confirm => 'Are you sure?', :method => :delete  

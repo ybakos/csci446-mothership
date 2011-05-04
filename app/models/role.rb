@@ -7,6 +7,15 @@ class Role < ActiveRecord::Base
 
   has_many :users
 
+
+  def to_s
+    self.name
+  end
+  
+  def name=(name)
+    self[:name] = name.strip.downcase
+  end
+
 end
 
 

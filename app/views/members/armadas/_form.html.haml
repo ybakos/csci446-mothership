@@ -1,4 +1,4 @@
-- form_for(armada) do |f|
+- form_for [:members, armada] do |f|
   = f.error_messages
   %p
     = f.label :name
@@ -7,6 +7,6 @@
   %p
     = f.label :description
     %br
-    = f.text_area :description
+    = f.text_area :description, :size => "50x10"
   %p
-    = f.submit "Submit"
+    = f.submit "Save"

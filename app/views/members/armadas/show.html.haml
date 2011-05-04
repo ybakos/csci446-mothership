@@ -1,15 +1,32 @@
-%h2= "Armada \"#{@armada.to_param}\""
-- content_tag_for :div, @armada do
-  %ul
-    %li
-      %strong Name:
-      =h @armada.name
-    %li
-      %strong Description:
-      =h @armada.description
-    %li
-      %strong Creator:
-      =h @armada.creator_id
-%ul
-  %li= link_to 'Edit', edit_armada_path(@armada)
-  %li= link_to 'Back', armadas_path
+- content_for :title do
+  = @armada
+
+%h2
+  = @armada
+  .action
+    = link_to image_tag('icon_small_larrow.png')
+    = link_to 'back to list', members_armadas_path
+    - if @armada.created_by(current_user)
+      .action
+        = link_to image_tag('icon_small_edit.png'), edit_members_armada_path(@armada)
+        = link_to 'edit', edit_members_armada_path(@armada)
+      .action
+        = link_to image_tag('icon_small_delete.png'), members_armada_path(@armada), :method => :delete, :confirm => 'Are you sure?'
+        = link_to 'delete', members_armada_path(@armada), :method => :delete, :confirm => 'Are you sure?'
+
+%p
+  Created by
+  = @armada.creator
+  on
+  = @armada.created_at.to_s(:date)
+
+.armada_data
+  %p
+    %strong Name
+    =h @armada.name  
+  %p
+    %strong Description:
+    =h @armada.description
+  %p
+    %strong Cost:
+    =h @armada.cost

@@ -1,27 +1,25 @@
 - content_for :title do
   Space Armada!
 
-
 .new_armada_button
-  = button_to 'New Armada!', new_armada_path, :method => :get
+  = button_to 'New Armada!', new_members_armada_path, :method => :get
 
-%h2 Welcome to the Mothership. Listing Armadas...
+%h2 All Armadas in the System
+%p
+  = pluralize @armadas.size, 'armada'
+  as of
+  = "#{Time.now.to_s(:date)}."
 
-.left
-  %p= image_tag 'mothership.jpg'
-  <object type="application/x-shockwave-flash" data="http://www.parisdjs.com/blog/share/podcast/dewplayer.swf?mp3=http://media.libsyn.com/media/timec/George_Clinton-U_Aint_Runnin_Shit_Grant_Phabao_Skank.mp3&amp;showtime=1" height="20" width="200"><param name="wmode" value="transparent" /><param name="movie" value="http://www.parisdjs.com/blog/share/podcast/dewplayer.swf?mp3=http://media.libsyn.com/media/timec/George_Clinton-U_Aint_Runnin_Shit_Grant_Phabao_Skank.mp3&amp;showtime=1" /></object>
-  
-.right
-  - if !@armadas.empty?
-    .armadas
-      %p= will_paginate(@armadas)
-      %table
-        %tr
-          %th Name
-          %th Creator
-          %th Cost
-          %th Date Created
-          %th
-        = render :partial => "armada", :collection => @armadas
-  - else
-    %h3 There are no armadas to show yet.
+- if !@armadas.empty?
+  %p= will_paginate(@armadas)
+  .armadas
+    %table
+      %tr
+        %th Name
+        %th Creator
+        %th Cost
+        %th Date Created
+        %th
+      = render :partial => "armada", :collection => @armadas
+- else
+  %h3 There are no armadas to show yet.

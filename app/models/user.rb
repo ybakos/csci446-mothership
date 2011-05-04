@@ -27,6 +27,14 @@ class User < ActiveRecord::Base
     role_symbols.include?(:administrator) || role_symbols.include?(:developer)
   end
 
+  def to_s
+    self.full_name
+  end
+  
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
   private
 
     def assign_default_role

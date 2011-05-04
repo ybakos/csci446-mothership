@@ -1,4 +1,12 @@
-%h2 New armada
+- content_for :title do
+  New Armada!
+
+%h2
+  New Armada!
+  .action
+    = link_to image_tag('icon_small_larrow.png'), members_armadas_path
+    = link_to 'back to list', members_armadas_path
+
+%p First create your armada by giving it a name and a description.
+
 = render :partial => "form", :locals => {:armada => @armada}
-%ul
-  %li= link_to 'Back', armadas_path

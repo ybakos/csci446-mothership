@@ -1,0 +1,12 @@
+development:
+  shield:
+    endpoint_url: http://localhost:3000
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/programeurs/development/photos
+staging:
+  shield:
+    endpoint_url: http://mines:mines@afternoon-mist-423.heroku.com
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/programeurs/staging/photos
+production:
+  shield:
+    endpoint_url: http://simple-dawn-803.heroku.com
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/programeurs/production/photos

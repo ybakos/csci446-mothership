@@ -7,7 +7,7 @@ log/*.pid
 tmp/**/*
 tmp/restart.txt
 config/database.yml
-config/integration.yml
+
 db/development_structure.sql
 db/integration
 db/sphinx

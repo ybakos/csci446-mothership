@@ -8,12 +8,13 @@
 #   config:
 #     - <Heroku config:var name>: <Heroku config:var value>
 #
+staging:
+  app: blooming-frost-996
+  config: &default
+    BUNDLE_WITHOUT: "development:test"
+
 production: 
   app: stormy-moon-647
   config:
     BUNDLE_WITHOUT: "development:test"
 
-staging:
-  app: blooming-frost-996
-  config: &default
-    BUNDLE_WITHOUT: "development:test"

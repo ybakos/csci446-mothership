@@ -8,11 +8,14 @@ class Members::ComponentsController < Members::MembersController
     else
       @components = []
     end
+  rescue
+    flash.now[:error] = "Sorry. Could not connect to remote service for #{params[:resource_name]}."
+      @components = []
   end
 
   def create
     @component = @armada.components.new(:iid => params[:resource_id], :resource_name => params[:resource_name])
- 
+
     respond_to do |format|
       if @component.save
         flash[:notice] = "Component was successfully added to <a href=\"/members/armadas/#{@armada.id}\">your armada</a>."
@@ -24,12 +27,15 @@ class Members::ComponentsController < Members::MembersController
         format.xml  { render :xml => @component.errors, :status => :unprocessable_entity }
       end
     end
+  rescue
+    flash[:error] = "Sorry. Could not connect to remote service for #{params[:resource_name]}."
+    redirect_to members_armada_components_url(@armada)
   end
 
   def destroy
     respond_to do |format|
       if @component.destroy
-        flash[:notice] = 'Component was successfully destroyed.'        
+        flash[:notice] = 'Component was successfully destroyed.'
         format.html { redirect_to members_components_path }
         format.xml  { head :ok }
       else

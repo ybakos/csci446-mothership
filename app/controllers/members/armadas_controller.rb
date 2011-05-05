@@ -22,7 +22,7 @@ class Members::ArmadasController < Members::MembersController
   def destroy
     respond_to do |format|
       if @armada.destroy
-        flash[:notice] = 'Armada was successfully destroyed.'        
+        flash[:notice] = 'Armada was successfully destroyed.'
         format.html { redirect_to members_armadas_path }
         format.xml  { head :ok }
       else
@@ -57,6 +57,9 @@ class Members::ArmadasController < Members::MembersController
       format.html
       format.xml  { render :xml => @armada }
     end
+    rescue
+      flash[:error] = "Sorry. Could not connect to remote component services."
+      redirect_to members_armadas_url
   end
 
   def update

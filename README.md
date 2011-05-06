@@ -14,6 +14,7 @@ Contributors
 * Ben Makuh
 * Zack Tillotson
 * Chad McKenna
+* Brian Findley
 * etc
 
 

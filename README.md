@@ -13,6 +13,7 @@ Contributors
 * Amanreet Bajwa
 * Ben Makuh
 * Zack Tillotson
+* Chad McKenna
 * etc
 
 

@@ -15,6 +15,7 @@ Contributors
 * Zack Tillotson
 * Chad McKenna
 * Brian Findley
+* Jared Steele
 * etc
 
 

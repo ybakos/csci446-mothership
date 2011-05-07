@@ -33,7 +33,7 @@ GEM
     heroku (1.17.15)
       json (~> 1.4.6)
       launchy (~> 0.3.2)
-      rest-client (>= 1.4.0, < 1.7.0)
+      rest-client (< 1.7.0, >= 1.4.0)
     heroku_san (1.0.8)
       heroku
     i18n (0.5.0)

@@ -1,4 +1,4 @@
-class HArvester < ActiveResource::Base
+class Harvester < ActiveResource::Base
 
   self.site = INTEGRATION_CONFIG[Rails.env]['harvester']['endpoint_url']
 

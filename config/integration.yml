@@ -13,9 +13,9 @@ staging:
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/programeurs/staging/photos
     image_default_url: http://mines:mines@afternoon-mist-423.heroku.com/images/default_shield.png
   harvester:
-    endpoint_url: http://dragon:test@growing-sword-776.heroku.com
+    endpoint_url: http://dragon:1234@growing-sword-776.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/dragon/staging/photos
-    image_default_url: http://dragon:test@growing-sword-776.heroku.com/images/default.png
+    image_default_url: http://dragon:1234@growing-sword-776.heroku.com/images/default.png
 production:
   shield:
     endpoint_url: http://simple-dawn-803.heroku.com

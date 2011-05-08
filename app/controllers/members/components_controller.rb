@@ -14,8 +14,9 @@ class Members::ComponentsController < Members::MembersController
   end
 
   def create
+puts "########################## about to create component!"
     @component = @armada.components.new(:iid => params[:resource_id], :resource_name => params[:resource_name])
-
+puts "########################## created component!"
     respond_to do |format|
       if @component.save
         flash[:notice] = "Component was successfully added to <a href=\"/members/armadas/#{@armada.id}\">your armada</a>."

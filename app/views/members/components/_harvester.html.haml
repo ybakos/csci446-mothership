@@ -1,0 +1,10 @@
+%tr
+  %td.thumb= image_tag(harvester.image_path)
+  %td
+    = harvester.name
+    = "(#{pluralize(harvester.price, 'AdmadaBuck')})"
+    %br
+    = truncate(harvester.description, :length => 100)
+  %td
+    = link_to image_tag('icon_small_add.png'), members_armada_components_path(@armada, :resource_name => 'Harvester', :resource_id => harvester.id), :method => :post
+    = link_to 'add to armada', members_armada_components_path(@armada, :resource_name => 'Harvester', :resource_id => harvester.id), :method => :post

@@ -8,7 +8,7 @@ class Harvester < ActiveResource::Base
 	else
 	  extension = File.extname(self.photo_file_name)
 	  base = INTEGRATION_CONFIG[Rails.env]['harvester']['image_base_url']
-	  "#{base}/#{id}/icon/#{self.photo_file_name}.#{extension}"
+	  "#{base}/#{id}/icon/#{self.photo_file_name}"
     end
   end
 

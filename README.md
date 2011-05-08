@@ -16,6 +16,7 @@ Contributors
 * Chad McKenna
 * Brian Findley
 * Jared Steele
+* Kyle Schulz
 * etc
 
 

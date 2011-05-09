@@ -17,6 +17,8 @@ Contributors
 * Brian Findley
 * Jared Steele
 * Kyle Schulz
+* Michael Rose
+* Carl Blum
 * etc
 
 

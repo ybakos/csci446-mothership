@@ -9,7 +9,7 @@ development:
     image_default_url: http://localhost:3000/images/default_shield.png
   battleship:
     endpoint_url: http://localhost:3000
-    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/programeurs/development/photos
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/development/images
     image_default_url: http://localhost:3000/images/default_battleship.png
 
 staging:
@@ -23,7 +23,7 @@ staging:
     image_default_url: http://dragon:1234@growing-sword-776.heroku.com/images/default.png
   battleship:
     endpoint_url: http://user:password@high-winter-98.heroku.com
-    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/staging/photos
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/staging/images
     image_default_url: http://user:password@high-winter-98.heroku.com/images/default_battleship.png
 production:
   shield:
@@ -36,6 +36,6 @@ production:
     image_default_url: http://morning-window-839.heroku.com/images/default.png
   battleship:
     endpoint_url: http://young-moon-201.heroku.com
-    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/production/photos
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/production/images
     image_default_url: http://young-moon-201.heroku.com/images/default_battleship.png
 

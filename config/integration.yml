@@ -35,7 +35,7 @@ production:
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/dragon/production/photos
     image_default_url: http://morning-window-839.heroku.com/images/default.png
   battleship:
-    endpoint_url: http://http://young-moon-201.heroku.com
+    endpoint_url: http://young-moon-201.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/production/photos
-    image_default_url: http://http://young-moon-201.heroku.com/images/default_battleship.png
+    image_default_url: http://young-moon-201.heroku.com/images/default_battleship.png
 

@@ -10,7 +10,7 @@ development:
   fighter:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/beardos/development/photos
-    image_default_url: http://localhost:3000/images/default_fighter_normal.png
+    image_default_url: http://localhost:3000/images/default_fighter_thumb.png
   battleship:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/development/images
@@ -28,7 +28,7 @@ staging:
   fighter:
     endpoint_url: http://mines:mines@deep-sky-83.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/beardos/staging/photos
-    image_default_url: http://mines:mines@deep-sky-83.heroku.com/images/default_fighter_normal.png
+    image_default_url: http://mines:mines@deep-sky-83.heroku.com/images/default_fighter_thumb.png
   battleship:
     endpoint_url: http://user:password@high-winter-98.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/staging/images
@@ -45,7 +45,7 @@ production:
   fighter:
     endpoint_url: http://blooming-wind-193.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/beardos/production/photos
-    image_default_url: http://blooming-wind-193.heroku.com/images/default_fighter_normal.png
+    image_default_url: http://blooming-wind-193.heroku.com/images/default_fighter_thumb.png
   battleship:
     endpoint_url: http://young-moon-201.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/production/images

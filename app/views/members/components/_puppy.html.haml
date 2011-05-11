@@ -1,0 +1,10 @@
+%tr
+  %td.thumb= image_tag(puppy.image_path)
+  %td
+    = puppy.name
+    = "(#{pluralize(puppy.cost, 'ArmadaBuck')})"
+    %br
+    = truncate(puppy.description, :length => 100)
+  %td
+    = link_to image_tag('icon_small_add.png'), members_armada_components_path(@armada, :resource_name => 'Puppy', :resource_id => puppy.id), :method => :post
+    = link_to 'add to armada', members_armada_components_path(@armada, :resource_name => 'Puppy', :resource_id => puppy.id), :method => :post

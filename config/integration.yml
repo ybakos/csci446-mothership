@@ -19,6 +19,10 @@ development:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/vegetarians/development/images
     image_default_url: http://localhost:3000/images/default_destroyer.jpg
+  puppy:
+    endpoint_url: http://localhost:8080
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bidoof/development/photos
+    image_default_url: http://localhost:8080/images/default_puppy.png
 
 staging:
   shield:
@@ -41,6 +45,10 @@ staging:
     endpoint_url: http://mines:mines@quiet-fog-435.heroku.com/
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/vegetarians/staging/images
     image_default_url: http://mines:mines@quiet-fog-435.heroku.com/images/default_destroyer.jpg
+  puppy:
+    endpoint_url: http://username:password@warm-warrior-421.heroku.com
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bidoof/staging/photos
+    image_default_url: http://username:password@warm-warrior-421.heroku.com/photos/default_puppy.png
 
 production:
   shield:
@@ -63,6 +71,8 @@ production:
     endpoint_url: http://high-lightning-781.heroku.com/
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/vegetarians/production/images
     image_default_url: http://high-lightning-781.heroku.com/images/default_destroyer.jpg
-
-
+  puppy:
+    endpoint_url: http://pure-frost-854.heroku.com
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bidoof/production/photos
+    image_default_url: http://pure-frost-854.heroku.com/images/default_puppy.png
 

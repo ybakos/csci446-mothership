@@ -14,7 +14,6 @@ group :development, :test do
   gem 'heroku'
   gem 'sqlite3'
   gem 'heroku_san'
-  gem 'ruby-debug'
   gem 'faker'
   gem 'rcov'
   gem 'annotate'

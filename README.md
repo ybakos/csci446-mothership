@@ -20,6 +20,8 @@ Contributors
 * Michael Rose
 * Carl Blum
 * Daniel Hathorn
+* Andrew Fager
+* Joe Martinez
 * etc
 
 

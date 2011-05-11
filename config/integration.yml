@@ -15,7 +15,7 @@ development:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/giraffe/development/images
     image_default_url: http://localhost:3000/images/default_battleship.png
-  destroyers:
+  destroyer:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/vegetarians/development/images
     image_default_url: http://localhost:3000/images/default_destroyer.jpg

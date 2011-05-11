@@ -8,9 +8,9 @@ class Members::ComponentsController < Members::MembersController
     else
       @components = []
     end
-  rescue
-    flash.now[:error] = "Sorry. Could not connect to remote service for #{params[:resource_name]}."
-      @components = []
+  # rescue
+  #   flash.now[:error] = "Sorry. Could not connect to remote service for #{params[:resource_name]}."
+  #     @components = []
   end
 
   def create
@@ -26,10 +26,10 @@ class Members::ComponentsController < Members::MembersController
         format.xml  { render :xml => @component.errors, :status => :unprocessable_entity }
       end
     end
-  rescue
-    flash[:error] = "Sorry. Could not connect to remote service for #{params[:resource_name]}."
-    redirect_to members_armada_components_url(@armada)
-  end
+  # rescue
+  #   flash[:error] = "Sorry. Could not connect to remote service for #{params[:resource_name]}."
+  #   redirect_to members_armada_components_url(@armada)
+   end
 
   def destroy
     respond_to do |format|

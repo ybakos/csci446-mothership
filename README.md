@@ -23,7 +23,8 @@ Contributors
 * Andrew Fager
 * Joe Martinez
 * Mila Rodriguez
-* etc
+* Jerel Miller
+* Alec Westerman
 
 
 Installation

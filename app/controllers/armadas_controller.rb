@@ -16,9 +16,9 @@ class ArmadasController < ApplicationController
       format.html
       format.xml  { render :xml => @armada }
     end
-    rescue
-      flash[:error] = "Sorry, could not connect to remote component services."
-      redirect_to root_url
+    #rescue
+    #  flash[:error] = "Sorry, could not connect to remote component services."
+    #  redirect_to root_url
   end
 
 end

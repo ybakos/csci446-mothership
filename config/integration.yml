@@ -54,7 +54,7 @@ staging:
     image_default_url: http://username:password@warm-warrior-421.heroku.com/photos/default_puppy.png
   corvette:
     endpoint_url: http://severe-autumn-903.heroku.com
-    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/staging/photos/
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/staging/photos
     image_default_url: http://severe-autumn-903.heroku.com/photos/default_corvette.png
 
 production:
@@ -84,6 +84,6 @@ production:
     image_default_url: http://pure-frost-854.heroku.com/images/default_puppy.png
   corvette:
     endpoint_url: http://evening-sky-672.heroku.com
-    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/production/photos/
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/production/photos
     image_default_url: http://evening-sky-672.heroku.com/photos/default_corvette.png
 

@@ -27,6 +27,10 @@ development:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/development/photos
     image_default_url: http://localhost:3000/images/default_corvette.png
+  velociraptor:
+    endpoint_url: http://localhost:3000
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/hipsters/development/photos
+    image_default_url: http://localhost:3000/images/default_velociraptor.png
   missile:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bacon/development/photos
@@ -65,6 +69,10 @@ staging:
     endpoint_url: http://severe-autumn-903.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/staging/photos
     image_default_url: http://severe-autumn-903.heroku.com/photos/default_corvette.png
+  velociraptor:
+    endpoint_url: http://sharp-planet-461.heroku.com/
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/hipsters/staging/photos
+    image_default_url: http://sharp-planet-461.heroku.com//photos/default_velociraptor.png
   missile:
     endpoint_url: http://heffalumps:woozles@evening-sky-370.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bacon/staging/photos
@@ -103,6 +111,10 @@ production:
     endpoint_url: http://evening-sky-672.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/production/photos
     image_default_url: http://evening-sky-672.heroku.com/photos/default_corvette.png
+  velociraptor:
+    endpoint_url: http://pure-journey-944.heroku.com/
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/hipsters/production/photos
+    image_default_url: http://pure-journey-944.heroku.com/photos/default_velociraptor.png
   missile:
     endpoint_url: http://vivid-dusk-329.heroku.com
     image_default_url: http://vivid-dusk-329.heroku.com/photos/default_missile.png
@@ -111,3 +123,4 @@ production:
     endpoint_url: http://pure-ice-359.heroku.com/
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/elephants/production/photos
     image_default_url: http://pure-ice-359.heroku.com/images/pirate_canon.jpg
+

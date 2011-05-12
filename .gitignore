@@ -21,3 +21,5 @@ Vagrantfile
 *.*~
 .rvmrc
 .komodoproject
+
+Gemfile*

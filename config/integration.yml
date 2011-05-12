@@ -23,7 +23,10 @@ development:
     endpoint_url: http://localhost:8080
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bidoof/development/photos
     image_default_url: http://localhost:8080/images/default_puppy.png
-
+  corvette:
+    endpoint_url: http://localhost:3000
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/development/photos
+    image_default_url: http://localhost:3000/images/default_corvette.png
 staging:
   shield:
     endpoint_url: http://mines:mines@afternoon-mist-423.heroku.com
@@ -49,6 +52,10 @@ staging:
     endpoint_url: http://username:password@warm-warrior-421.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bidoof/staging/photos
     image_default_url: http://username:password@warm-warrior-421.heroku.com/photos/default_puppy.png
+  corvette:
+    endpoint_url: http://severe-autumn-903.heroku.com
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/staging/photos/
+    image_default_url: http://severe-autumn-903.heroku.com/photos/default_corvette.png
 
 production:
   shield:
@@ -75,4 +82,8 @@ production:
     endpoint_url: http://pure-frost-854.heroku.com
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/bidoof/production/photos
     image_default_url: http://pure-frost-854.heroku.com/images/default_puppy.png
+  corvette:
+    endpoint_url: http://evening-sky-672.heroku.com
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/illogicians/production/photos/
+    image_default_url: http://evening-sky-672.heroku.com/photos/default_corvette.png
 

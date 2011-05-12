@@ -1,0 +1,10 @@
+%tr
+  %td.thumb= image_tag(gnome.image_path)
+  %td
+    = gnome.name
+    = "(#{pluralize(gnome.cost, 'ArmadaBuck')})"
+    %br
+    = truncate(gnome.description, :length => 100)
+  %td
+    = link_to image_tag('icon_small_add.png', :border => 0), members_armada_components_path(@armada, :resource_name => 'Gnome', :resource_id => gnome.id), :method => :post
+    = link_to 'add to armada', members_armada_components_path(@armada, :resource_name => 'Gnome', :resource_id => gnome.id), :method => :post

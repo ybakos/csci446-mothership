@@ -41,7 +41,7 @@ development:
     image_default_url: http://localhost:3000/images/pirate_canon.jpg
   gnome:
     endpoint_url: http://localhost:3000
-    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/development/photos
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/development/images
     image_default_url: http://localhost:3000/images/default_gnome.jpg
     
 staging:

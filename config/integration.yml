@@ -43,6 +43,10 @@ development:
     endpoint_url: http://localhost:3000
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/development/images
     image_default_url: http://localhost:3000/images/default_gnome.jpg
+  wand:
+    endpoint_url: http://localhost:3000
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/development/photos
+    image_default_url: http://localhost:3000/images/default_wand.png
     
 staging:
   shield:
@@ -89,6 +93,10 @@ staging:
     endpoint_url: http://alecjerel:mwrulez@gentle-journey-917.heroku.com/
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/staging/photos
     image_default_url: http://alecjerel:mwrulez@gentle-journey-917.heroku.com/images/default_gnome.jpg
+  wand:
+    #endpoint_url: http://localhost:3000
+    #image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/development/images
+    #image_default_url: http://localhost:3000/images/default_wand.png
 
 production:
   shield:
@@ -135,4 +143,8 @@ production:
     endpoint_url: http://morning-warrior-399.heroku.com/
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/production/photos
     image_default_url: http://morning-warrior-399.heroku.com/images/default_gnome.jpg
+  wand:
+    #endpoint_url: http://localhost:3000
+    #image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/development/images
+    #image_default_url: http://localhost:3000/images/default_wand.png
 

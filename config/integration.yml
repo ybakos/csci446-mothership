@@ -94,9 +94,9 @@ staging:
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/staging/photos
     image_default_url: http://alecjerel:mwrulez@gentle-journey-917.heroku.com/images/default_gnome.jpg
   wand:
-    #endpoint_url: http://localhost:3000
-    #image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/development/images
-    #image_default_url: http://localhost:3000/images/default_wand.png
+    endpoint_url: http://foo:foo@glowing-mountain-850.heroku.com/
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/staging/photos
+    image_default_url: http://foo:foo@glowing-mountain-850.heroku.com/images/default_wand.png
 
 production:
   shield:
@@ -144,7 +144,6 @@ production:
     image_base_url: http://s3.amazonaws.com/mines.edu/cs446/mw_assoc/production/photos
     image_default_url: http://morning-warrior-399.heroku.com/images/default_gnome.jpg
   wand:
-    #endpoint_url: http://localhost:3000
-    #image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/development/images
-    #image_default_url: http://localhost:3000/images/default_wand.png
-
+    endpoint_url: http://sharp-sunset-344.heroku.com/
+    image_base_url: http://s3.amazonaws.com/mines.edu/cs446/chosen/production/photos
+    image_default_url: http://sharp-sunset-344.heroku.com/images/default_wand.png
